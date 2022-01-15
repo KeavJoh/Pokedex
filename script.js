@@ -50,21 +50,27 @@ function renderPokemonInfo(i) {
         let groupTwo = currentPokemonGroupTwo['names'][3]['name'];
 
         document.getElementById('pokedex').innerHTML += `        
-        <div id="pokemon${i}">
+        <div id="pokemon${i}" class="pokemon-overview">
+            <div class="pokemon-overview-head">
             <h2 class="name-of-pokemon">${name}</h2>
-            <p class="id-of-pokemon">${id}</p>
-            <img src="${img}" alt="" class="img-of-pokemon">
+            <p class="id-of-pokemon">#${id}</p>
+            </div>
+            <img src="${img}" alt="" class="img-pokemon-overview">
+            <div class="two-pokemongroups">
             <p class="group-of-pokemon">${groupOne}</p>
             <p class="group-of-pokemon">${groupTwo}</p>
+            </div>
         </div>
         `
     } else {
         let groupOne = currentPokemonGroupOne['names'][3]['name'];
         document.getElementById('pokedex').innerHTML += `        
-        <div id="pokemon${i}">
+        <div id="pokemon${i}" class="pokemon-overview">
+            <div class="pokemon-overview-head">
             <h2 class="name-of-pokemon">${name}</h2>
-            <p class="id-of-pokemon">${id}</p>
-            <img src="${img}" alt="" class="img-of-pokemon">
+            <p class="id-of-pokemon">#${id}</p>
+            </div>
+             <img src="${img}" alt="" class="img-pokemon-overview">
             <p class="group-of-pokemon">${groupOne}</p>
         </div>
         `
