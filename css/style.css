@@ -1,0 +1,9 @@
+body {
+margin: 0;
+}
+
+#pokemon {
+    display: flex;
+    min-height: 50vh;
+    color: white;
+}
