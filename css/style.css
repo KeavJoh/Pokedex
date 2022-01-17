@@ -5,7 +5,14 @@
 }
 
 body {
-margin: 0;
+    margin: 0;
+}
+
+.navi-header {
+    width: 100%;
+    height: 100px;
+    background-color: #d53032;
+    margin-bottom: 50px;
 }
 
 #pokedex {
@@ -31,6 +38,16 @@ margin: 0;
     height: auto;
     margin: 10px 10px 10px 10px;
     border-radius: 20px;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    transition: all 100ms ease-in-out;
+}
+
+.pokemon-overview:hover {
+    -webkit-box-shadow: inset 0px 0px 12px 4px #FFFFFF;
+    box-shadow: inset 0px 0px 12px 4px #FFFFFF;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
 }
 
 .img-pokemon-overview {
