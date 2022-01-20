@@ -17,7 +17,7 @@ body {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
     height: 10vh;
@@ -26,6 +26,17 @@ body {
     border: 3px solid #3C5377;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.header-button {
+    padding: 10px;
+    border: 3px solid #3C5377;
+    border-radius: 100%;
+}
+
+.header-button:hover {
+    cursor: pointer;
+    border: 3px solid #FECA1B;
 }
 
 #pokedex {
@@ -105,6 +116,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-top: 50px;
     background-image: url('../img/pokeball-background.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -161,4 +173,49 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.search-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.search-input input {
+    border: 3px solid #FECA1B;
+    border-radius: 50px;
+    outline: none;
+}
+
+.search-input input:focus {
+    border: 3px solid #d53032;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 8%;
+    margin-left: 20px;
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+    border: 3px solid #3C5377;
+    border-radius: 50px;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    border: 3px solid #FECA1B;
+    background-color: #d53032;
+}
+
+.margin-search {
+    margin-top: 180px;
 }

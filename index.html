@@ -28,16 +28,18 @@
 
     <div class="body">
         <nav class="navi-header">
+            <div onclick="backToMenu()" class="header-button"><img src="img/home.png" alt=""></div>
             <img src="img/pokeapi.png" alt="">
+            <div onclick="goToSearch()" class="header-button"><img src="img/search.png" alt=""></div>
         </nav>
-        <div id="load">
+        <div id="load" class="dp-none">
             <div class="loading-content">
                 <img src="img/pokeapi.png" alt="">
                 <h2>Daten werden geladen...</h2>
             </div>
         </div>
         <div id="main_menu" class="main-content-div">
-            <button onclick="generationOne()" class="generation-button margin-top"><img src="img/1.png" alt="" class="button-img">Generation 1</button>
+            <button onclick="generationOne()" class="generation-button"><img src="img/1.png" alt="" class="button-img">Generation 1</button>
             <button onclick="generationTwo()" class="generation-button"><img src="img/152.png" alt="" class="button-img">Generation 2</button>
             <button onclick="generationThree()" class="generation-button"><img src="img/252.png" alt="" class="button-img">Generation 3</button>
             <button onclick="generationFour()" class="generation-button"><img src="img/387.png" alt="" class="button-img">Generation 4</button>
@@ -45,6 +47,16 @@
             <button onclick="generationSix()" class="generation-button"><img src="img/650.png" alt="" class="button-img">Generation 6</button>
             <button onclick="generationSeven()" class="generation-button"><img src="img/722.png" alt="" class="button-img">Generation 7</button>
             <button onclick="generationEight()" class="generation-button"><img src="img/810.png" alt="" class="button-img">Generation 8</button>
+        </div>
+        <div id="search_div" class="search-div, dp-none">
+            <div class="search-input">
+                <input id="search_name" type="text" placeholder="Name...">
+                <button onclick="searchForPokemonName()" class="search-button">Suchen</button>
+            </div>
+            <div class="search-input">
+                <input id="search_id" type="text" placeholder="Id...">
+                <button class="search-button">Suchen</button>
+            </div>
         </div>
         <div id="pokedex" class="dp-none">
         </div>
