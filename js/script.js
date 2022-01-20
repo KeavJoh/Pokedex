@@ -42,7 +42,12 @@ async function renderPokemonArray() {
 
     for (let i = 1; i <= currentNumberOfPokemon; i++) {
         await loadPokemon(i);
-        await allPokemons.push(currentPokemonName);
+        allPokemons.push(currentPokemonName);
+        if (allPokemons.length < currentNumberOfPokemon) {
+            document.getElementById('load').classList.remove('dp-none');
+        } else {
+            document.getElementById('load').classList.add('dp-none');
+        }
     }
 }
 
@@ -63,48 +68,56 @@ async function renderPokemonArray() {
 function generationOne() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationOne, lengthPokemonFirstGeneration);
 }
 
 function generationTwo() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationTwo, lengthPokemonSecondGeneration);
 }
 
 function generationThree() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationThree, lengthPokemonThirdGeneration);
 }
 
 function generationFour() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationFour, lengthPokemonFourthGeneration);
 }
 
 function generationFive() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationFive, lengthPokemonFifthGeneration);
 }
 
 function generationSix() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationSix, lengthPokemonSixthGeneration);
 }
 
 function generationSeven() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationSeven, lengthPokemonSeventhGeneration);
 }
 
 function generationEight() {
     document.getElementById('main_menu').classList.add('dp-none');
     document.getElementById('pokedex').classList.remove('dp-none');
+    document.getElementById('pokedex').classList.add('margin-top-pokedex');
     renderPokemonOverview(firstPokemonOfGenerationEight, lengthPokemonEighthGeneration);
 }
 

@@ -26,20 +26,30 @@
 
 <body onload="renderPokemonArray()">
 
-    <nav class="navi-header">
-    </nav>
-    <div id="main_menu" class="main-content-div">
-        <button onclick="generationOne()" class="generation-button"><img src="img/1.png" alt="" class="button-img">Generation 1</button>
-        <button onclick="generationTwo()" class="generation-button"><img src="img/152.png" alt="" class="button-img">Generation 2</button>
-        <button onclick="generationThree()" class="generation-button"><img src="img/252.png" alt="" class="button-img">Generation 3</button>
-        <button onclick="generationFour()" class="generation-button"><img src="img/387.png" alt="" class="button-img">Generation 4</button>
-        <button onclick="generationFive()" class="generation-button"><img src="img/494.png" alt="" class="button-img">Generation 5</button>
-        <button onclick="generationSix()" class="generation-button"><img src="img/650.png" alt="" class="button-img">Generation 6</button>
-        <button onclick="generationSeven()" class="generation-button"><img src="img/722.png" alt="" class="button-img">Generation 7</button>
-        <button onclick="generationEight()" class="generation-button"><img src="img/810.png" alt="" class="button-img">Generation 8</button>
+    <div class="body">
+        <nav class="navi-header">
+            <img src="img/pokeapi.png" alt="">
+        </nav>
+        <div id="load">
+            <div class="loading-content">
+                <img src="img/pokeapi.png" alt="">
+                <h2>Daten werden geladen...</h2>
+            </div>
+        </div>
+        <div id="main_menu" class="main-content-div">
+            <button onclick="generationOne()" class="generation-button margin-top"><img src="img/1.png" alt="" class="button-img">Generation 1</button>
+            <button onclick="generationTwo()" class="generation-button"><img src="img/152.png" alt="" class="button-img">Generation 2</button>
+            <button onclick="generationThree()" class="generation-button"><img src="img/252.png" alt="" class="button-img">Generation 3</button>
+            <button onclick="generationFour()" class="generation-button"><img src="img/387.png" alt="" class="button-img">Generation 4</button>
+            <button onclick="generationFive()" class="generation-button"><img src="img/494.png" alt="" class="button-img">Generation 5</button>
+            <button onclick="generationSix()" class="generation-button"><img src="img/650.png" alt="" class="button-img">Generation 6</button>
+            <button onclick="generationSeven()" class="generation-button"><img src="img/722.png" alt="" class="button-img">Generation 7</button>
+            <button onclick="generationEight()" class="generation-button"><img src="img/810.png" alt="" class="button-img">Generation 8</button>
+        </div>
+        <div id="pokedex" class="dp-none">
+        </div>
     </div>
-    <div id="pokedex" class="dp-none">
-    </div>
+
 
 
 </body>

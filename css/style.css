@@ -8,10 +8,24 @@ body {
     margin: 0;
 }
 
+.body {
+    height: 100vh;
+}
+
 .navi-header {
-    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     height: 10vh;
-    background-color: #d53032;
+    left: 10%;
+    background-color: rgba(213, 48, 50, 0.9);
+    border: 3px solid #3C5377;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 #pokedex {
@@ -19,8 +33,6 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    margin-top: 5vh;
 }
 
 #pokemon {
@@ -92,8 +104,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    margin-top: 5vh;
+    height: 100vh;
+    background-image: url('../img/pokeball-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .button-img {
@@ -121,4 +136,29 @@ body {
 
 .dp-none {
     display: none;
+}
+
+.margin-top {
+    margin-top: 126px;
+}
+
+.margin-top-pokedex {
+    margin-top: 200px;
+}
+
+#load {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 999;
+}
+
+.loading-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
