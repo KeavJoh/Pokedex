@@ -1,7 +1,7 @@
 * {
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
-    color: #4D4D4D;
+    color: #3C5377;
 }
 
 body {
@@ -10,9 +10,8 @@ body {
 
 .navi-header {
     width: 100%;
-    height: 100px;
+    height: 10vh;
     background-color: #d53032;
-    margin-bottom: 50px;
 }
 
 #pokedex {
@@ -21,6 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    margin-top: 5vh;
 }
 
 #pokemon {
@@ -85,4 +85,40 @@ body {
     border: 3px solid #4D4D4D;
     padding: 5px 10px 5px 10px;
     border-radius: 20px;
+}
+
+.main-content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 5vh;
+}
+
+.button-img {
+    max-width: 12%;
+    padding-bottom: 15px;
+}
+
+.generation-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 35%;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+    border: 3px solid #3C5377;
+    border-radius: 50px;
+}
+
+.generation-button:hover {
+    cursor: pointer;
+    border: 3px solid #FECA1B;
+    background-color: #d53032;
+}
+
+.dp-none {
+    display: none;
 }
