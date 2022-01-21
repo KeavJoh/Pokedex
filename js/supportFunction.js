@@ -1,7 +1,11 @@
 async function loadPokemon(i) {
-    let urlName = `https://pokeapi.co/api/v2/pokemon-species/${i}/`;
-    let responsName = await fetch(urlName);
-    currentPokemonName = await responsName.json();
+    let urlPokemon = `https://pokeapi.co/api/v2/pokemon-species/${i}/`;
+    let responsPokemon = await fetch(urlPokemon);
+    currentPokemonName = await responsPokemon.json();
+    
+    let urlStats = `https://pokeapi.co/api/v2/pokemon/${i}/`;
+    let responseStats = await fetch(urlStats);
+    currentPokemonStats = await responseStats.json();
 }
 
 async function loadPictureOfPokemon(i) {

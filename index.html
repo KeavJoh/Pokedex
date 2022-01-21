@@ -26,18 +26,19 @@
 
 <body onload="renderPokemonArray()">
 
-    <div class="body">
+    <div class="main-div">
+        <!-- HEADER/NAVI -->
         <nav class="navi-header">
             <div onclick="backToMenu()" class="header-button"><img src="img/home.png" alt=""></div>
             <img src="img/pokeapi.png" alt="">
             <div onclick="goToSearch()" class="header-button"><img src="img/search.png" alt=""></div>
         </nav>
+        <!-- LOADSCREEN/DP-NONE -->
         <div id="load" class="dp-none">
-            <div class="loading-content">
-                <img src="img/pokeapi.png" alt="">
-                <h2>Daten werden geladen...</h2>
+            <div id="loading_content" class="loading-content">
             </div>
         </div>
+        <!-- GENERATION MENU -->
         <div id="main_menu" class="main-content-div">
             <button onclick="generationOne()" class="generation-button"><img src="img/1.png" alt="" class="button-img">Generation 1</button>
             <button onclick="generationTwo()" class="generation-button"><img src="img/152.png" alt="" class="button-img">Generation 2</button>
@@ -48,6 +49,7 @@
             <button onclick="generationSeven()" class="generation-button"><img src="img/722.png" alt="" class="button-img">Generation 7</button>
             <button onclick="generationEight()" class="generation-button"><img src="img/810.png" alt="" class="button-img">Generation 8</button>
         </div>
+        <!-- SEARCH SECTION/DP-NONE -->
         <div id="search_div" class="search-div, dp-none">
             <div class="search-input">
                 <input id="search_name" type="text" placeholder="Name...">
@@ -55,10 +57,14 @@
             </div>
             <div class="search-input">
                 <input id="search_id" type="text" placeholder="Id...">
-                <button class="search-button">Suchen</button>
+                <button onclick="searchForPokemonId()" class="search-button">Suchen</button>
             </div>
         </div>
+        <!-- POKEMON SHOW ROOM/DP-NONE -->
         <div id="pokedex" class="dp-none">
+        </div>
+        <!-- POKEMON DETAIL ROOM/DP-NONE -->
+        <div id="pokemon_detail" class="dp-none">
         </div>
     </div>
 
