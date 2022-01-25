@@ -1,0 +1,121 @@
+@media (max-width: 1440px) {
+    .header-img {
+        max-width: 180px;
+    }
+    .header-icon {
+        max-width: 40px;
+    }
+    .button-img {
+        padding-bottom: 5px;
+    }
+    .loading-content img {
+        width: 180px;
+    }
+    .loading-content h2 {
+        font-size: .9em;
+    }
+    #pokemon_detail {
+        flex-direction: row;
+    }
+    #pokemon_detail button {
+        margin-bottom: 20px;
+    }
+    .margin-top-pokedex {
+        margin-top: 150px;
+    }
+    #pokemon_detail button {
+        position: absolute;
+        bottom: 0;
+        right: 100;
+        margin-left: unset;
+    }
+    .pokemon-stats {
+        margin: unset;
+    }
+    .main-content-div {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 956px) {
+    .generation-button {
+        max-width: 65%;
+    }
+    .pokemon-overview {
+        max-width: 36%;
+    }
+    #pokemon_detail {
+        flex-direction: column;
+    }
+    #pokemon_detail button {
+        position: relative;
+        bottom: unset;
+        right: unset;
+        margin-left: unset;
+        margin-top: 10px;
+    }
+    .pokemon-stats {
+        width: 50%;
+    }
+}
+
+@media (max-width: 556px) {
+    .navi-header {
+        width: 100%;
+        left: unset;
+    }
+    .header-button {
+        padding: 5px;
+    }
+    .header-icon {
+        max-width: 30px;
+    }
+    .header-img {
+        max-width: 145px;
+    }
+    .generation-button {
+        max-width: 100%;
+    }
+    .pokemon-overview {
+        max-width: 80%;
+    }
+    .pokemon-stats p {
+        font-size: 0.8em;
+    }
+    .pokemon-stats {
+        width: 95%;
+    }
+    #pokemon_detail {
+        padding-top: 150px;
+        overflow: scroll;
+    }
+    .margin-search {
+        margin-top: 110px;
+    }
+    .search-input {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-input input {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    .margin-top-pokedex {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+    .no-landscape {
+        position: absolute;
+        display: block !important;
+        z-index: 1200;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+}

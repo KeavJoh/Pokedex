@@ -2,6 +2,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     color: #3C5377;
+    box-sizing: border-box;
 }
 
 body {
@@ -257,4 +258,8 @@ body {
     text-align: center;
     border: 3px solid #3C5377;
     border-radius: 15px;
+}
+
+.no-landscape {
+    display: none;
 }

@@ -17,6 +17,7 @@
     <script src="js/arrays.js" ></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bg_color.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,12 +33,19 @@
     <div class="main-div">
         <!-- HEADER/NAVI -->
         <nav class="navi-header">
-            <div onclick="backToMenu()" class="header-button"><img src="img/home.png" alt=""></div>
-            <img src="img/pokeapi.png" alt="">
-            <div onclick="goToSearch()" class="header-button"><img src="img/search.png" alt=""></div>
+            <div onclick="backToMenu()" class="header-button"><img class="header-icon" src="img/home.png" alt=""></div>
+            <img class="header-img" src="img/pokeapi.png" alt="">
+            <div onclick="goToSearch()" class="header-button"><img class="header-icon" src="img/search.png" alt=""></div>
         </nav>
+
+        <div class="no-landscape">
+            <div class="loading-content">
+                <h2>Die PokeApi ist leider nicht für den Landscapemodus optimiert!</h2>
+            </div>
+        </div>
+
         <!-- LOADSCREEN/DP-NONE -->
-        <div id="load" class="dp-none">
+        <div id="load"  class="dp-none">
             <div id="loading_content" class="loading-content">
             </div>
         </div>
